@@ -1,5 +1,5 @@
 # LogicalGates
-This is sn Emulator for simple logic expression.[WPF NET CORE 3.1]
+This is an emulator for simple logic expression.[WPF NET CORE 3.1]
 After you write a expression the schema is generated and you can switch on/off variables
 <br>
 1. The first expression is A&B [A and B] 
