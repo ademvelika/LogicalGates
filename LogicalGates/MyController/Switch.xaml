@@ -9,7 +9,39 @@
     <Grid>
         <StackPanel>
             <Label HorizontalContentAlignment="Center" FontSize="16" x:Name="Inputer">x</Label>
-        <ToggleButton  x:Name="SwitchBtn" Unchecked="SwitchBtn_Unchecked" Checked="ToggleButton_Checked">On/Off</ToggleButton> 
+            <ToggleButton Height="19"  x:Name="SwitchBtn" Unchecked="SwitchBtn_Unchecked" Checked="ToggleButton_Checked">
+                <ToggleButton.Template>
+                    <ControlTemplate TargetType="{x:Type ToggleButton}">
+                        <Border CornerRadius="3" Background="{TemplateBinding Background}">
+                            <ContentPresenter Margin="3" 
+               HorizontalAlignment="Center" 
+               VerticalAlignment="Center"/>
+                        </Border>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                            <GradientStop Color="#FFF3F3F3" Offset="1"/>
+                                            <GradientStop Color="LawnGreen" Offset="0.307"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter Property="Background">
+                                    <Setter.Value>
+                                        <LinearGradientBrush EndPoint="0,1" StartPoint="0,0">
+                                            <GradientStop Color="#FFF3F3F3" Offset="1"/>
+                                            <GradientStop Color="Red" Offset="0.307"/>
+                                        </LinearGradientBrush>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </ToggleButton.Template>
+            </ToggleButton> 
         </StackPanel>
     </Grid>
 </UserControl>
