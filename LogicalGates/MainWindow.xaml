@@ -1,0 +1,33 @@
+﻿<Window x:Class="LogicalGates.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LogicalGates"
+        xmlns:myctr="clr-namespace:LogicalGates.MyController"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded" WindowStartupLocation="CenterScreen"  WindowState="Maximized" >
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <StackPanel>
+        <WrapPanel  Background="Transparent">
+            <Label VerticalContentAlignment="Center"  FontSize="20">Logical Expression:</Label>
+            <TextBox x:Name="LogicalExpression" VerticalAlignment="Center" FontWeight="Bold" MinWidth="150" FontSize="20"></TextBox>
+                <Border Padding="2" Background="LightSteelBlue" Margin="20,20" CornerRadius="10" BorderBrush="Transparent" BorderThickness="1">
+            <Button  Padding="5,0"   BorderThickness="0" Background="Transparent"  FontSize="17"  Click="Button_Click"  >Create Circuit</Button>
+           </Border>
+        </WrapPanel>
+            <Separator></Separator>
+        </StackPanel>
+        <myctr:Board   Margin="100,100,0,0"  x:Name="Circuit" Grid.Row="1">
+
+        </myctr:Board>
+
+
+
+    </Grid>
+</Window>
+

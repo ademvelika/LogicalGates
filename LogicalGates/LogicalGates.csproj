@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\and.png" />
+    <None Remove="Images\not.png" />
+    <None Remove="Images\offlight.png" />
+    <None Remove="Images\onlamp.png" />
+    <None Remove="Images\or.png" />
+    <None Remove="Sound\sound.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Sound\sound.wav" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\and.png" />
+    <Resource Include="Images\not.png" />
+    <Resource Include="Images\offlight.png" />
+    <Resource Include="Images\onlamp.png" />
+    <Resource Include="Images\or.png" />
+  </ItemGroup>
+
+</Project>

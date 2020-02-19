@@ -1,0 +1,12 @@
+﻿<UserControl x:Class="LogicalGates.MyController.NotControl"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:LogicalGates.MyController"
+             mc:Ignorable="d" 
+              Height="40" Width="40" Padding="0" Background="Transparent">
+    <Grid>
+        <Image Source="..//Images/not.png"/>
+    </Grid>
+</UserControl>
