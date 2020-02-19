@@ -58,7 +58,7 @@ namespace LogicalGates
             {
                 var basePath = System.AppDomain.CurrentDomain.BaseDirectory;
                 SoundPlayer player = new SoundPlayer();
-                player.SoundLocation =System.IO.Path.Combine(basePath, @"sound.wav");
+                player.SoundLocation =System.IO.Path.Combine(basePath, @"Sound\\sound.wav");
                 player.Load();
                 player.Play();
             }
